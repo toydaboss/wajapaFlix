@@ -1,2 +1,2 @@
 # wajapaFlix
-A video streaming websit
+A video streaming website
