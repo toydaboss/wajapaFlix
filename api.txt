@@ -1,0 +1,6 @@
+19eb95a88d273eb8eb7ee70b5c5c89ef
+api_key
+https://api.themoviedb.org/3/movie/550?api_key=19eb95a88d273eb8eb7ee70b5c5c89ef
+token
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOWViOTVhODhkMjczZWI4ZWI3ZWU3MGI1YzVjODllZiIsInN1YiI6IjVmMmE0MzVlZDhjYzRhMDAzOTIwMTJjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.
+https://wajapaflix.web.app/
