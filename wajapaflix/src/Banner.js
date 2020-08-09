@@ -1,15 +1,18 @@
 /*jshint esversion: 9 */
+/* The Banner is responsible for the change information at the top of the webpage*/
+
 import React, {
     useState,
     useEffect
 } from 'react';
-import axios from './axios';
+import axios from './axios'; // this is responsible for fetching the URL
 import requests from './Requests';
 
 function Banner() {
+    // React Hooks
     const [movie, setMovie] = useState([]);
     useEffect(() => {
-        async function fetchData() {
+        async function fetchData() {        
             const request = await axios.get(requests.fetchNetflixOriginals);
             setMovie(request.data.results[Math.floor(Math.random() * request.data.results.length - 1)]);
             return request;

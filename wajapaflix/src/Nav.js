@@ -1,7 +1,9 @@
 /* jshint esversion:6 */
-import React,{useState,useEffect} from 'react';
 
+import React,{useState,useEffect} from 'react';
+// responsible for the navigation menu
 function Nav() {
+    //React Hooks
     const [show,handleShow] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll",()=>{
@@ -28,4 +30,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default Nav;

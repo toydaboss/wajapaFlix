@@ -1,5 +1,5 @@
 /*jshint esversion: 9 */
-
+//Handles api calls
 const API_KEY = "19eb95a88d273eb8eb7ee70b5c5c89ef";
 const requests ={
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,

@@ -1,0 +1,15 @@
+.searchBar{
+    width: 65%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+input{
+    border: 15px;
+    height: 30px;
+    background-color: #f4f4f4;
+}
+.fas{
+    font-size: 1em;
+    color: white;
+}

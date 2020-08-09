@@ -26,16 +26,9 @@ function Row({title,fetchUrl,isLargeRow}) {
                     className={`row_poster ${isLargeRow && "row_posterLarge"}`} 
                     src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
                 ))}
-            </div>
-            
+            </div>          
         </div>
     )
 };
 
-/* <div className={`hover_effect  ${isLargeRow && "row_posterLarge"}`}>
-                {movies.map(movie=>(
-                     <p key={movie.id}
-                     className={"text"}>{movie.title||movie.name || movie.original_name}</p> 
-                 ))}
-    </div> */
 export default Row;

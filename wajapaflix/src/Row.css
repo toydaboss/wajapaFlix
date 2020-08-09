@@ -23,7 +23,7 @@
     transition: transform 450ms;
 }
 .row_poster:hover{
-    transform: scale(1.5);
+    transform: scale(1.09);
 }
 .hover_effect{
     position: relative;

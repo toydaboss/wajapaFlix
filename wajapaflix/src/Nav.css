@@ -18,6 +18,7 @@
     width: 150px;
     object-fit: contain;
     left: 20px;
+    top: 5px;
 }
 .nav_avatar{
     position: fixed;

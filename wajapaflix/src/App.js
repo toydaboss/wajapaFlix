@@ -1,4 +1,6 @@
 /*jshint esversion: 6 */
+
+/* import  modules  to for the apps*/
 import React from 'react';
 import './App.css';
 import Row from './Row';
@@ -7,6 +9,8 @@ import Banner from './Banner';
 import Nav from './Nav';
 import './Banner.css';
 import './Nav.css';
+/* import Search from './Search';
+ import './Search.css'; */
 function App() {
   return (
     <div className="app">
