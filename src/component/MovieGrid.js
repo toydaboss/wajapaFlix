@@ -58,18 +58,19 @@ const MovieGrid = ({ title, fetchUrl, error }) => {
             <div className="movies__item">
               {
                 (movies.length) ? movies.map((movie) => {
+                  //console.log(movie)
                   return (
                     <section key={movie.id}>
                       <div className="movies__item-poster">
-                        <img src={`${baseUrl}${movie?.backdrop_path}`}
+                        <img src={`${baseUrl}${movie?.poster_path}`}
                           alt={movie.name} />
                       </div>
-                      <div className="movies__item-about">
+                      {/* <div className="movies__item-about">
                         <h3 className="px-2 py-2">{movie?.name || movie?.title}</h3>
                         <p >{movie?.release_date}</p>
-                      </div>
+                      </div> */}
                       <button
-                        className="btn px-2 py-2"
+                        className="btn"
                         onClick={() => { handleClick(movie) }}>
                         Watch The Trailer</button>
                     </section>

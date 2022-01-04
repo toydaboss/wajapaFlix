@@ -29,20 +29,21 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="hero__overlay"></div>
       <div className="hero__body">
         {(populateMovie && movie.length) && movie.map((item) => {
           return (
             <Fragment key={item?.id || item?.genre_ids[0] || item?.vote_average + item?.vote_count}>
-              <h1 className="display-4 ml-4">
-                {item?.original_title || item?.title || item?.name}
-              </h1>
               <img src={`${baseUrl}${item?.backdrop_path}`}
                 alt={item.original_title}
               />
-              <p className="hero__body-about ml-4 my-5">
-                {item?.overview.length && item?.overview.substring(0, 150) + '...'}
-              </p>
+              <div className="hero__overlay">
+                <h1 className="">
+                  {item?.original_title || item?.title || item?.name}
+                </h1>
+                <p className="hero__body-about">
+                  {item?.overview.length && item?.overview.substring(0, 200) + '...'}
+                </p>
+              </div>
             </Fragment>
           )
         })

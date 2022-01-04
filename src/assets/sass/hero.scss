@@ -1,5 +1,5 @@
 .hero {
-   position: relative;
+   //position: relative;
    z-index: 1;
    width: 100%;
    height: 650px;
@@ -8,36 +8,46 @@
    background-position: center top;
    background-size: cover;
    background-repeat: no-repeat;
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
-   clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+   //-webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
+   //clip-path: polygon(0 0, 100% 0, 100% 97%, 0% 100%);
    overflow: hidden;
 
    &__overlay {
       position: absolute;
-      top: 0;
+      bottom: 0;
       z-index: 3;
-      width: 100%;
-      height: 100%;
+      width:450px;
+      margin-left: 3rem;
+      margin-bottom: 3rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      //padding-bottom: 0px;
+      //width: 100%;
+      //height: 100%;
       background: rgba(0, 0, 0, 0.3);
    }
 
    &__body {
       position: relative;
-      padding-top: 60px;
-      padding-bottom: 40px;
+      //bottom: 0;
+      //padding-top: 60px;
+      //padding-bottom: 40px;
       height: 100%;
+      width: 100%;
       color: white;
 
       h1 {
          position: relative;
          z-index: 3;
+         margin-bottom: 1.5rem;
       }
 
       p {
          position: relative;
          z-index: 3;
-         width: 400px;
-         font-size: 2rem;
+         
+         font-size: 1.5rem;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
 
       &-btn {
